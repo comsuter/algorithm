@@ -1,9 +1,8 @@
 public class Maximum_and_minimum {
-    
     public static void main(String[] args) {
 		solution("2 1 3 4");
-        // solution("-1 -2 -3 -4");
-        // solution("-1 -1");
+//		solution("-1 -2 -3 -4");
+//		solution("-1 -1");
 	}
 
 	public static String solution(String s) {
@@ -18,9 +17,6 @@ public class Maximum_and_minimum {
 
 			min = Math.min(min, number);
 			max = Math.max(max, number);
-
-			System.out.println(max);
-
 		}
 		answer = min + " " + max;
 
