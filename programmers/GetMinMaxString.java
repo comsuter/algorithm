@@ -1,4 +1,4 @@
-public class Maximum_and_minimum {
+public class GetMinMaxString {
     public static void main(String[] args) {
 //		getMinMaxString_1("2 1 3 4");
 //		getMinMaxString_1("-1 -2 -3 -4");
