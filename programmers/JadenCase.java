@@ -7,24 +7,13 @@ public class JadenCase {
 
 	public static String jadenCase_1(String s) {
 		String answer = "";
-		String[] groups = s.split(" ");
-
-		for (int i = 0; i < groups.length; i++) {
-			String data = groups[i];
-
-			if (groups[i].length() == 0) {
-				answer += " ";
-			} else {
-				answer += data.substring(0, 1).toUpperCase();
-				answer += data.substring(1, data.length()).toLowerCase();
-				answer += " ";
-			}
+		String[] groups = s.toLowerCase().split("");
+		boolean isFirst = true;
+	
+		for (String str : groups) {
+			answer += isFirst ? str.toUpperCase() : str;
+			isFirst = " ".equals(str) ? true : false;
 		}
-
-		if (s.substring(s.length() - 1, s.length()).equals(" ")) {
-			return answer;
-		}
-
-		return answer.substring(0, answer.length() - 1);
+		return answer;
 	}
 }
