@@ -29,12 +29,9 @@ public class GetMinMaxString {
 		for (int i = 1; i < numbers.length; i++) {
 			n = Integer.parseInt(numbers[i]);
 
-			if (min > n)
-				min = n;
-			if (max < n)
-				max = n;
+			if (min > n) min = n;
+			if (max < n) max = n;
 		}
-
 		return min + " " + max;
 	}
 
