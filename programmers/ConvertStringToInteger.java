@@ -1,9 +1,8 @@
 public class ConvertStringToInteger {
 
 	public static void main(String[] args) {
-//		int result = convertStringToInteger_1("1234");
-		int result = convertStringToInteger_2("1234");
-		System.out.println(result);
+//		convertStringToInteger_1("1234");
+		convertStringToInteger_2("1234");
 	}
 
 	public static int convertStringToInteger_1(String s) {
