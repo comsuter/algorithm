@@ -5,8 +5,15 @@ public class DescendingInteger {
 	}
 
 	public static long descendingInteger(long n) {
-		long answer = 0;
+		String str = Long.toString(n);
+
+		char[] newArr = new char[str.length()];
+		int cnt = str.length() - 1;
 		
-		return answer;
+		for (int i = 0; i < str.length(); i++) {
+			newArr[cnt] = str.charAt(i);
+			cnt--;
+		}
+		return Long.parseLong(String.valueOf(newArr));
 	}
 }
