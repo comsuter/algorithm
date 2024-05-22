@@ -16,4 +16,11 @@ public class DescendingInteger {
 		return Long.parseLong(sb.toString());
 	}
 
+	static String res = "";
+
+	public static long descendingInteger_2(long n) {
+		Long.toString(n).chars().sorted().forEach(c -> res = Character.valueOf((char)c) + res);
+		return Long.parseLong(res);
+	}
+
 }
